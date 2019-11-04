@@ -9,9 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func btnclicked(sender:AnyObject){
+        print("button clicked")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("pageloaded")
         // Do any additional setup after loading the view, typically from a nib.
     }
 

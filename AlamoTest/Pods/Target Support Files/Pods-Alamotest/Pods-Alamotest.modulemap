@@ -1,0 +1,6 @@
+framework module Pods_Alamotest {
+  umbrella header "Pods-Alamotest-umbrella.h"
+
+  export *
+  module * { export * }
+}

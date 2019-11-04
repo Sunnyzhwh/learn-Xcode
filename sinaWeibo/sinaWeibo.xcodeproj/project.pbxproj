@@ -14,6 +14,10 @@
 		A3FD8BD0236FF3E7007BA6C8 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD8BCF236FF3E7007BA6C8 /* MessageTableViewController.swift */; };
 		A3FD8BD2236FF3F5007BA6C8 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD8BD1236FF3F5007BA6C8 /* DiscoverTableViewController.swift */; };
 		A3FD8BD4236FF401007BA6C8 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD8BD3236FF401007BA6C8 /* ProfileTableViewController.swift */; };
+		A3FD8BD823701077007BA6C8 /* UIbutton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD8BD723701077007BA6C8 /* UIbutton+Extension.swift */; };
+		A3FD8BDA23701BD6007BA6C8 /* VisitorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD8BD923701BD6007BA6C8 /* VisitorTableViewController.swift */; };
+		A3FD8BDC23701FF2007BA6C8 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD8BDB23701FF2007BA6C8 /* VisitorView.swift */; };
+		A3FD8BDE23706DD5007BA6C8 /* label+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD8BDD23706DD5007BA6C8 /* label+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		A3FD8BCF236FF3E7007BA6C8 /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		A3FD8BD1236FF3F5007BA6C8 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 		A3FD8BD3236FF401007BA6C8 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		A3FD8BD723701077007BA6C8 /* UIbutton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIbutton+Extension.swift"; sourceTree = "<group>"; };
+		A3FD8BD923701BD6007BA6C8 /* VisitorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorTableViewController.swift; sourceTree = "<group>"; };
+		A3FD8BDB23701FF2007BA6C8 /* VisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		A3FD8BDD23706DD5007BA6C8 /* label+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "label+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 				A3FD8BC5236FF21E007BA6C8 /* ViewModel */,
 				A3FD8BC4236FF20E007BA6C8 /* Controller */,
 				A3FD8BC2236FF1FC007BA6C8 /* Model */,
+				A3FD8BD523701005007BA6C8 /* Tools */,
 				A3FD8BB7236FEAD9007BA6C8 /* Assets.xcassets */,
 				A3FD8BBC236FEAD9007BA6C8 /* Info.plist */,
 			);
@@ -138,8 +147,27 @@
 			isa = PBXGroup;
 			children = (
 				A3FD8BCB236FF37C007BA6C8 /* MainViewController.swift */,
+				A3FD8BD923701BD6007BA6C8 /* VisitorTableViewController.swift */,
+				A3FD8BDB23701FF2007BA6C8 /* VisitorView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		A3FD8BD523701005007BA6C8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD8BD623701017007BA6C8 /* Extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A3FD8BD623701017007BA6C8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD8BD723701077007BA6C8 /* UIbutton+Extension.swift */,
+				A3FD8BDD23706DD5007BA6C8 /* label+extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +241,12 @@
 			files = (
 				A3FD8BD4236FF401007BA6C8 /* ProfileTableViewController.swift in Sources */,
 				A3FD8BCE236FF3D5007BA6C8 /* HomeTableViewController.swift in Sources */,
+				A3FD8BD823701077007BA6C8 /* UIbutton+Extension.swift in Sources */,
 				A3FD8BB1236FEAD8007BA6C8 /* AppDelegate.swift in Sources */,
+				A3FD8BDE23706DD5007BA6C8 /* label+extension.swift in Sources */,
+				A3FD8BDA23701BD6007BA6C8 /* VisitorTableViewController.swift in Sources */,
 				A3FD8BD0236FF3E7007BA6C8 /* MessageTableViewController.swift in Sources */,
+				A3FD8BDC23701FF2007BA6C8 /* VisitorView.swift in Sources */,
 				A3FD8BD2236FF3F5007BA6C8 /* DiscoverTableViewController.swift in Sources */,
 				A3FD8BCC236FF37C007BA6C8 /* MainViewController.swift in Sources */,
 			);

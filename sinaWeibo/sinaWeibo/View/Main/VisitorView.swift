@@ -7,21 +7,9 @@
 //
 
 import UIKit
-protocol VisitorViewDelegate: NSObjectProtocol {
-    func visitorDidReg()
-    func visitorDidLogin()
-}
+
 class VisitorView: UIView {
     
-    weak var delegate: VisitorViewDelegate?
-    
-    @objc private func clickReg() {
-        delegate?.visitorDidReg()
-    }
-    
-    @objc private func clickLogin() {
-        delegate?.visitorDidLogin()
-    }
     
     func setInfo(imageName: String?, title: String) {
         messageLabel.text = title
@@ -57,9 +45,9 @@ class VisitorView: UIView {
     private lazy var homeIconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_house"))
     private lazy var messageLabel: UILabel = UILabel(title: "关注一些人，回这里看看有什么消息")
       
-    private lazy var registerButtion: UIButton = UIButton(title: "注册", color: UIColor.orange, imageName: "common_button_white_disable")
+    lazy var registerButtion: UIButton = UIButton(title: "注册", color: UIColor.orange, imageName: "common_button_white_disable")
 
-    private lazy var loginButtion: UIButton = UIButton(title: "登录", color: UIColor.darkGray, imageName: "common_button_white_disable")
+    lazy var loginButtion: UIButton = UIButton(title: "登录", color: UIColor.darkGray, imageName: "common_button_white_disable")
 
 }
 extension VisitorView {
@@ -106,7 +94,6 @@ extension VisitorView {
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[mask]-(btnHeight)-[registerButton]", options: [], metrics: ["btnHeight": -36], views: ["mask": maskIconView, "registerButton": registerButtion]))
         
         backgroundColor = UIColor(white: 237.0 / 255.0, alpha: 1.0)
-        registerButtion.addTarget(self, action: #selector(clickReg), for: .touchUpInside)
-        loginButtion.addTarget(self, action: #selector(clickLogin), for: .touchUpInside)
+        
     }
 }

@@ -18,18 +18,19 @@ class VisitorTableViewController: UITableViewController {
     }
     private func setupVisitorView() {
         visitorView = VisitorView()
-        visitorView?.delegate = self
-        view = visitorView
         
+        view = visitorView
+        visitorView?.registerButtion.addTarget(self, action: #selector(visitorDidReg), for: .touchUpInside)
+        visitorView?.loginButtion.addTarget(self, action: #selector(visitorDidLogin), for: .touchUpInside)
     }
 
 }
-extension VisitorTableViewController: VisitorViewDelegate {
-    func visitorDidReg() {
+extension VisitorTableViewController {
+    @objc func visitorDidReg() {
         print("注册")
     }
     
-    func visitorDidLogin() {
+    @objc func visitorDidLogin() {
         print("登录")
     }
     
